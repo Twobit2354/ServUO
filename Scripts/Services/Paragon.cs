@@ -5,13 +5,13 @@ namespace Server.Mobiles
 {
     public class Paragon
     {
-        public static double ChestChance = 0.10;// Chance that a paragon will carry a paragon chest
-        public static double ChocolateIngredientChance = 0.20;// Chance that a paragon will drop a chocolatiering ingredient
+        public static double ChestChance = 0.20;// Chance that a paragon will carry a paragon chest (Original = 0.10)
+        public static double ChocolateIngredientChance = 0.0;// Chance that a paragon will drop a chocolatiering ingredient (Original = 0.20)
         public static Map[] Maps = new Map[]                   // Maps that paragons will spawn on
         {
             Map.Ilshenar
         };
-        public static Type[] Artifacts = new Type[]
+      /*  public static Type[] Artifacts = new Type[]
         {
             typeof(GoldBricks), typeof(PhillipsWoodenSteed),
             typeof(AlchemistsBauble), typeof(ArcticDeathDealer),
@@ -25,8 +25,8 @@ namespace Server.Mobiles
             typeof(VioletCourage), typeof(HeartOfTheLion),
             typeof(WrathOfTheDryad), typeof(PixieSwatter),
             typeof(GlovesOfThePugilist)
-        };
-        public static int Hue = 0x501;// Paragon hue
+        }; */
+        public static int Hue = (0x47d, 0x498) ;// Paragon hue (Original 0x501)
 
         // Buffs
         public static double HitsBuff = 5.0;
