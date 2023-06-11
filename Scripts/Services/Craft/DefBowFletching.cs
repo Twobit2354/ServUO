@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Engines.Craft
 {
-    #region Mondain's Legacy
+  /*  #region Mondain's Legacy
     public enum BowRecipes
     {
         //magical
@@ -23,7 +23,7 @@ namespace Server.Engines.Craft
         MischiefMaker = 253,
         TheNightReaper = 254,
     }
-    #endregion
+    #endregion */
 
     public class DefBowFletching : CraftSystem
     {
@@ -106,8 +106,8 @@ namespace Server.Engines.Craft
             int index = -1;
 
             // Materials
-            index = AddCraft(typeof(ElvenFletching), 1044457, 1113346, 90.0, 130.0, typeof(Feather), 1044562, 20, 1044563);
-            AddRes(index, typeof(FaeryDust), 1113358, 1, 1044253);
+       /*     index = AddCraft(typeof(ElvenFletching), 1044457, 1113346, 90.0, 130.0, typeof(Feather), 1044562, 20, 1044563);
+            AddRes(index, typeof(FaeryDust), 1113358, 1, 1044253); */
 
             AddCraft(typeof(Kindling), 1044457, 1023553, 0.0, 00.0, typeof(Board), 1044041, 1, 1044351);
 
@@ -123,18 +123,18 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(Feather), 1044562, 1, 1044563);
             SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(FukiyaDarts), 1044565, 1030246, 50.0, 73.8, typeof(Board), 1044041, 1, 1044351);
-            SetUseAllRes(index, true);
+       /*     index = AddCraft(typeof(FukiyaDarts), 1044565, 1030246, 50.0, 73.8, typeof(Board), 1044041, 1, 1044351);
+            SetUseAllRes(index, true); */
 
             // Weapons
             AddCraft(typeof(Bow), 1044566, 1025042, 30.0, 70.0, typeof(Board), 1044041, 7, 1044351);
             AddCraft(typeof(Crossbow), 1044566, 1023919, 60.0, 100.0, typeof(Board), 1044041, 7, 1044351);
             AddCraft(typeof(HeavyCrossbow), 1044566, 1025117, 80.0, 120.0, typeof(Board), 1044041, 10, 1044351);
 
-            AddCraft(typeof(CompositeBow), 1044566, 1029922, 70.0, 110.0, typeof(Board), 1044041, 7, 1044351);
+       //     AddCraft(typeof(CompositeBow), 1044566, 1029922, 70.0, 110.0, typeof(Board), 1044041, 7, 1044351);
             AddCraft(typeof(RepeatingCrossbow), 1044566, 1029923, 90.0, 130.0, typeof(Board), 1044041, 10, 1044351);
 
-            index = AddCraft(typeof(Yumi), 1044566, 1030224, 90.0, 130.0, typeof(Board), 1044041, 10, 1044351);
+       /*     index = AddCraft(typeof(Yumi), 1044566, 1030224, 90.0, 130.0, typeof(Board), 1044041, 10, 1044351);
 
             index = AddCraft(typeof(ElvenCompositeLongbow), 1044566, 1031562, 95.0, 145.0, typeof(Board), 1044041, 20, 1044351);
 
@@ -205,7 +205,7 @@ namespace Server.Engines.Craft
 
             index = AddCraft(typeof(AssassinsShortbow), 1044566, 1073512, 75.0, 125.0, typeof(Board), 1044041, 15, 1044351);
             AddRes(index, typeof(DarkSapphire), 1026249, 1, 1053098);
-            AddRecipe(index, (int)BowRecipes.AssassinsShortbow);
+            AddRecipe(index, (int)BowRecipes.AssassinsShortbow); */
 
             SetSubRes(typeof(Board), 1072643);
 
