@@ -276,7 +276,7 @@ namespace Server
             new LootPackItem(typeof(ResurrectionScroll), 1), new LootPackItem(typeof(SummonAirElementalScroll), 1), new LootPackItem(typeof(SummonDaemonScroll), 1),
             new LootPackItem(typeof(SummonEarthElementalScroll), 1), new LootPackItem(typeof(SummonFireElementalScroll), 1), new LootPackItem(typeof(SummonWaterElementalScroll), 1 )
         };
-
+/*    #region ML ITEMS
         public static readonly LootPackItem[] NecroScrollItems = new[]
         {
             new LootPackItem(typeof(AnimateDeadScroll), 1),
@@ -335,10 +335,10 @@ namespace Server
             new LootPackItem(typeof(NetherCycloneScroll), 1),
             new LootPackItem(typeof(RisingColossusScroll), 1)
         };
+#endregion */
 
-
-        public static readonly LootPackItem[] GemItems = new[] { new LootPackItem(typeof(Amber), 1) };
-        public static readonly LootPackItem[] RareGemItems = new[] { new LootPackItem(typeof(BlueDiamond), 1) };
+        public static readonly LootPackItem[] GemItems = new[] { new LootPackItem(typeof(Amber), 0) }; // Original changed from 1 to 0
+        public static readonly LootPackItem[] RareGemItems = new[] { new LootPackItem(typeof(BlueDiamond), 0) }; // Original changed from 1 to 0
 
 
         public static readonly LootPackItem[] MageryRegItems = new[]
@@ -352,7 +352,7 @@ namespace Server
             new LootPackItem(typeof(SulfurousAsh), 1),
             new LootPackItem(typeof(SpidersSilk), 1)
         };
-
+/* #region ML Reagents
         public static readonly LootPackItem[] NecroRegItems = new[]
         {
             new LootPackItem(typeof(BatWing), 1),
@@ -379,7 +379,7 @@ namespace Server
             new LootPackItem(typeof(Corruption), 1),
             new LootPackItem(typeof(Muculent), 1)
         };
-
+#endregion */
         public static readonly LootPackItem[] PotionItems = new[]
         {
             new LootPackItem(typeof(AgilityPotion), 1), new LootPackItem(typeof(StrengthPotion), 1),
@@ -408,7 +408,7 @@ namespace Server
             new LootPackItem(typeof(RibCage), 1), new LootPackItem(typeof(BonePile), 1)
         };
 
-
+/*
         public static readonly LootPackItem[] StatueItems = new[]
         {
             new LootPackItem(typeof(StatueSouth), 1), new LootPackItem(typeof(StatueSouth2), 1),
@@ -417,7 +417,7 @@ namespace Server
             new LootPackItem(typeof(StatueSouthEast), 1), new LootPackItem(typeof(BustSouth), 1),
             new LootPackItem(typeof(BustEast), 1)
         };
-
+*/
         #region Magic Items
         public static readonly LootPackItem[] MagicItemsPoor = new[]
         {
@@ -495,7 +495,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "2d10+20"),
+                    new LootPackEntry(false, true, Gold, 100.00, "2d10+10"), // Original "2d10+20"
                     new LootPackEntry(false, false, MagicItemsPoor, 1.00, 1, 5, 0, 100, true),
                     new LootPackEntry(false, false, Instruments, 0.02, 1, true)
                 });
@@ -504,7 +504,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "4d10+40"),
+                    new LootPackEntry(false, true, Gold, 100.00, "4d10+20"), // Original "4d10+40"
                     new LootPackEntry(false, false, MagicItemsMeagerType1, 20.40, 1, 2, 0, 50, true),
                     new LootPackEntry(false, false, MagicItemsMeagerType2, 10.20, 1, 5, 0, 100, true),
                     new LootPackEntry(false, false, Instruments, 0.10, 1)
@@ -514,7 +514,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "8d10+100"),
+                    new LootPackEntry(false, true, Gold, 100.00, "8d10+50"), // Original "8d10+100"
                     new LootPackEntry(false, false, MagicItemsAverageType1, 32.80, 1, 3, 0, 50, true),
                     new LootPackEntry(false, false, MagicItemsAverageType1, 32.80, 1, 4, 0, 75, true),
                     new LootPackEntry(false, false, MagicItemsAverageType2, 19.50, 1, 5, 0, 100, true),
@@ -525,7 +525,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "15d10+225"),
+                    new LootPackEntry(false, true, Gold, 100.00, "15d10+150"), // Original "15d10+225"
                     new LootPackEntry(false, false, MagicItemsRichType1, 76.30, 1, 4, 0, 75, true),
                     new LootPackEntry(false, false, MagicItemsRichType1, 76.30, 1, 4, 0, 75, true),
                     new LootPackEntry(false, false, MagicItemsRichType2, 61.70, 1, 5, 0, 100, true),
@@ -536,7 +536,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "3d100+400"),
+                    new LootPackEntry(false, true, Gold, 100.00, "3d100+225"), // Original "3d100+100"
                     new LootPackEntry(false, false, MagicItemsFilthyRichType1, 79.50, 1, 5, 0, 100, true),
                     new LootPackEntry(false, false, MagicItemsFilthyRichType1, 79.50, 1, 5, 0, 100, true),
                     new LootPackEntry(false, false, MagicItemsFilthyRichType2, 77.60, 1, 5, 25, 100, true),
@@ -547,7 +547,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "6d100+600"),
+                    new LootPackEntry(false, true, Gold, 100.00, "6d100+300"), // Original "6d100+600"
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
@@ -561,7 +561,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "10d100+800"),
+                    new LootPackEntry(false, true, Gold, 100.00, "10d100+400"), // Original "10d100+800"
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
@@ -589,15 +589,15 @@ namespace Server
         public static readonly LootPack LowScrolls = new LootPack(new[] { new LootPackEntry(false, true, LowScrollItems, 100.00, 1) });
         public static readonly LootPack MedScrolls = new LootPack(new[] { new LootPackEntry(false, true, MedScrollItems, 100.00, 1) });
         public static readonly LootPack HighScrolls = new LootPack(new[] { new LootPackEntry(false, true, HighScrollItems, 100.00, 1) });
-        public static readonly LootPack MageryScrolls = new LootPack(new[] { new LootPackEntry(false, true, MageryScrollItems, 100.00, 1) });
-        public static readonly LootPack NecroScrolls = new LootPack(new[] { new LootPackEntry(false, true, NecroScrollItems, 100.00, 1) });
-        public static readonly LootPack ArcanistScrolls = new LootPack(new[] { new LootPackEntry(false, true, ArcanistScrollItems, 100.00, 1) });
-        public static readonly LootPack MysticScrolls = new LootPack(new[] { new LootPackEntry(false, true, MysticScrollItems, 100.00, 1) });
+        public static readonly LootPack MageryScrolls = new LootPack(new[] { new LootPackEntry(false, true, MageryScrollItems, 100.00, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack NecroScrolls = new LootPack(new[] { new LootPackEntry(false, true, NecroScrollItems, 100.00, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack ArcanistScrolls = new LootPack(new[] { new LootPackEntry(false, true, ArcanistScrollItems, 100.00, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack MysticScrolls = new LootPack(new[] { new LootPackEntry(false, true, MysticScrollItems, 100.00, 0) }); // Original changed from 1 to 0
 
         public static readonly LootPack MageryRegs = new LootPack(new[] { new LootPackEntry(false, true, MageryRegItems, 100.00, 1) });
-        public static readonly LootPack NecroRegs = new LootPack(new[] { new LootPackEntry(false, true, NecroRegItems, 100.00, 1) });
-        public static readonly LootPack MysticRegs = new LootPack(new[] { new LootPackEntry(false, true, MysticRegItems, 100.00, 1) });
-        public static readonly LootPack PeerlessResource = new LootPack(new[] { new LootPackEntry(false, true, PeerlessResourceItems, 100.00, 1) });
+        public static readonly LootPack NecroRegs = new LootPack(new[] { new LootPackEntry(false, true, NecroRegItems, 100.00, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack MysticRegs = new LootPack(new[] { new LootPackEntry(false, true, MysticRegItems, 100.00, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack PeerlessResource = new LootPack(new[] { new LootPackEntry(false, true, PeerlessResourceItems, 100.00, 0) }); // Original changed from 1 to 0
 
         public static readonly LootPack Gems = new LootPack(new[] { new LootPackEntry(false, true, GemItems, 100.00, 1) });
         public static readonly LootPack RareGems = new LootPack(new[] { new LootPackEntry(false, true, RareGemItems, 100.00, 1) });
@@ -606,16 +606,16 @@ namespace Server
         public static readonly LootPack BodyParts = new LootPack(new[] { new LootPackEntry(false, true, LootBodyParts, 100.00, 1) });
         public static readonly LootPack Bones = new LootPack(new[] { new LootPackEntry(false, true, LootBones, 100.00, 1) });
         public static readonly LootPack BodyPartsAndBones = new LootPack(new[] { new LootPackEntry(false, true, LootBodyPartsAndBones, 100.00, 1) });
-        public static readonly LootPack Statue = new LootPack(new[] { new LootPackEntry(false, true, StatueItems, 100.00, 1) });
+        public static readonly LootPack Statue = new LootPack(new[] { new LootPackEntry(false, true, StatueItems, 100.00, 0) }); // Original changed from 1 to 0
 
-        public static readonly LootPack Parrot = new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(ParrotItem), 1) }, 10.00, 1) });
-        public static readonly LootPack Talisman = new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(RandomTalisman), 1) }, 100.00, 1) });
+        public static readonly LootPack Parrot = new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(ParrotItem), 1) }, 10.00, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack Talisman = new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(RandomTalisman), 1) }, 100.00, 0) }); // Original changed from 1 to 0
 
-        public static readonly LootPack PeculiarSeed1 = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomPeculiarSeed(1), 1) }, 33.3, 1) });
-        public static readonly LootPack PeculiarSeed2 = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomPeculiarSeed(2), 1) }, 33.3, 1) });
-        public static readonly LootPack PeculiarSeed3 = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomPeculiarSeed(3), 1)}, 33.3, 1) });
-        public static readonly LootPack PeculiarSeed4 = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomPeculiarSeed(4), 1) }, 33.3, 1) });
-        public static readonly LootPack BonsaiSeed = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomBonsaiSeed(), 1) }, 25.0, 1) });
+        public static readonly LootPack PeculiarSeed1 = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomPeculiarSeed(1), 1) }, 33.3, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack PeculiarSeed2 = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomPeculiarSeed(2), 1) }, 33.3, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack PeculiarSeed3 = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomPeculiarSeed(3), 1)}, 33.3, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack PeculiarSeed4 = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomPeculiarSeed(4), 1) }, 33.3, 0) }); // Original changed from 1 to 0
+        public static readonly LootPack BonsaiSeed = new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(e => Engines.Plants.Seed.RandomBonsaiSeed(), 1) }, 25.0, 0) }); // Original changed from 1 to 0
 
         public static LootPack LootItems(LootPackItem[] items)
         {
