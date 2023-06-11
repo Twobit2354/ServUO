@@ -26,7 +26,7 @@ namespace Server.Mobiles
             typeof(WrathOfTheDryad), typeof(PixieSwatter),
             typeof(GlovesOfThePugilist)
         }; */
-        public static int Hue = (0x47d, 0x498) ;// Paragon hue (Original 0x501)
+        public static int Hue = (0x47D, 0x498) ;// Paragon hue (Original 0x501)
 
         // Buffs
         public static double HitsBuff = 5.0;
