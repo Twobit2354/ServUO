@@ -323,7 +323,7 @@ namespace Server.Engines.Craft
             AddSpell(typeof(SummonFireElementalScroll), Reg.Bloodmoss, Reg.MandrakeRoot, Reg.SpidersSilk, Reg.SulfurousAsh);
             AddSpell(typeof(SummonWaterElementalScroll), Reg.Bloodmoss, Reg.MandrakeRoot, Reg.SpidersSilk);
 
-            AddNecroSpell(0, 23, 39.6, typeof(AnimateDeadScroll), Reg.GraveDust, Reg.DaemonBlood);
+         /*   AddNecroSpell(0, 23, 39.6, typeof(AnimateDeadScroll), Reg.GraveDust, Reg.DaemonBlood);
             AddNecroSpell(1, 13, 19.6, typeof(BloodOathScroll), Reg.DaemonBlood);
             AddNecroSpell(2, 11, 19.6, typeof(CorpseSkinScroll), Reg.BatWing, Reg.GraveDust);
             AddNecroSpell(3, 7, 19.6, typeof(CurseWeaponScroll), Reg.PigIron);
@@ -339,11 +339,11 @@ namespace Server.Engines.Craft
             AddNecroSpell(13, 41, 79.6, typeof(VengefulSpiritScroll), Reg.BatWing, Reg.GraveDust, Reg.PigIron);
             AddNecroSpell(14, 23, 59.6, typeof(WitherScroll), Reg.GraveDust, Reg.NoxCrystal, Reg.PigIron);
             AddNecroSpell(15, 17, 19.6, typeof(WraithFormScroll), Reg.NoxCrystal, Reg.PigIron);
-            AddNecroSpell(16, 40, 79.6, typeof(ExorcismScroll), Reg.NoxCrystal, Reg.GraveDust);
+            AddNecroSpell(16, 40, 79.6, typeof(ExorcismScroll), Reg.NoxCrystal, Reg.GraveDust); */
 
             int index;
 
-            index = AddCraft(typeof(EnchantedSwitch), 1044294, 1072893, 45.0, 95.0, typeof(BlankScroll), 1044377, 1, 1044378);
+         /*   index = AddCraft(typeof(EnchantedSwitch), 1044294, 1072893, 45.0, 95.0, typeof(BlankScroll), 1044377, 1, 1044378);
             AddRes(index, typeof(SpidersSilk), 1044360, 1, 1044253);
             AddRes(index, typeof(BlackPearl), 1044353, 1, 1044253);
             AddRes(index, typeof(SwitchItem), 1073464, 1, 1044253);
@@ -353,7 +353,7 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(SpidersSilk), 1044360, 1, 1044253);
             AddRes(index, typeof(BlackPearl), 1044353, 1, 1044253);
             AddRes(index, typeof(HollowPrism), 1072895, 1, 1044253);
-            ForceNonExceptional(index);
+            ForceNonExceptional(index); */
 
             index = AddCraft(typeof(Runebook), 1044294, 1041267, 45.0, 95.0, typeof(BlankScroll), 1044377, 8, 1044378);
             AddRes(index, typeof(RecallScroll), 1044445, 1, 1044253);
@@ -363,7 +363,7 @@ namespace Server.Engines.Craft
 
             AddCraft(typeof(Spellbook), 1044294, 1023834, 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378);
 
-            index = AddCraft(typeof(ScrappersCompendium), 1044294, 1072940, 75.0, 125.0, typeof(BlankScroll), 1044377, 100, 1044378);
+        /*    index = AddCraft(typeof(ScrappersCompendium), 1044294, 1072940, 75.0, 125.0, typeof(BlankScroll), 1044377, 100, 1044378);
             AddRes(index, typeof(DreadHornMane), 1032682, 1, 1044253);
             AddRes(index, typeof(Taint), 1032679, 10, 1044253);
             AddRes(index, typeof(Corruption), 1032676, 10, 1044253);
@@ -385,11 +385,11 @@ namespace Server.Engines.Craft
             index = AddCraft(typeof(PropheticManuscript), 1044294, 1155631, 90.0, 115.0, typeof(AncientParchment), 1155627, 10, 1044253);
             AddRes(index, typeof(AntiqueDocumentsKit), 1155630, 1, 1044253);
             AddRes(index, typeof(WoodPulp), 1113136, 10, 1113289);
-            AddRes(index, typeof(Beeswax), 1025154, 5, 1044253);
+            AddRes(index, typeof(Beeswax), 1025154, 5, 1044253); */
 
             AddCraft(typeof(BlankScroll), 1044294, 1023636, 50.0, 100.0, typeof(WoodPulp), 1113136, 1, 1044378);
 
-            index = AddCraft(typeof(ScrollBinderDeed), 1044294, 1113135, 75.0, 125.0, typeof(WoodPulp), 1113136, 1, 1044253);
+         /*   index = AddCraft(typeof(ScrollBinderDeed), 1044294, 1113135, 75.0, 125.0, typeof(WoodPulp), 1113136, 1, 1044253);
             SetItemHue(index, 1641);
 
             index = AddCraft(typeof(GargoyleBook100), 1044294, 1113290, 60.0, 100.0, typeof(BlankScroll), 1044377, 40, 1044378);
@@ -419,7 +419,7 @@ namespace Server.Engines.Craft
             AddMysticSpell(1031690, 40, 60.7, typeof(SpellPlagueScroll), Reg.DaemonBone, Reg.DragonBlood, Reg.MandrakeRoot, Reg.Nightshade, Reg.SulfurousAsh, Reg.DaemonBone);
             AddMysticSpell(1031691, 40, 60.7, typeof(HailStormScroll), Reg.DragonBlood, Reg.BlackPearl, Reg.MandrakeRoot, Reg.Bloodmoss);
             AddMysticSpell(1031692, 50, 75.0, typeof(NetherCycloneScroll), Reg.Bloodmoss, Reg.Nightshade, Reg.SulfurousAsh, Reg.MandrakeRoot);
-            AddMysticSpell(1031693, 50, 75.0, typeof(RisingColossusScroll), Reg.DaemonBone, Reg.FertileDirt, Reg.DragonBlood, Reg.Nightshade, Reg.MandrakeRoot);
+            AddMysticSpell(1031693, 50, 75.0, typeof(RisingColossusScroll), Reg.DaemonBone, Reg.FertileDirt, Reg.DragonBlood, Reg.Nightshade, Reg.MandrakeRoot); */
 
             MarkOption = true;
         }
