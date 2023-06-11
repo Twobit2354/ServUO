@@ -8,7 +8,7 @@ namespace Server
     public class Loot
     {
         #region List definitions
-
+/*  Removed Race Specific Armor/weapons/Jewelry
         #region SA equipment
 		private static readonly Type[] m_SAJewelryTypes = new[]
         {
@@ -112,7 +112,7 @@ namespace Server
         private static readonly Type[] m_SERangedWeaponTypes = new[] { typeof(Yumi) };
         public static Type[] SERangedWeaponTypes => m_SERangedWeaponTypes;
 		#endregion
-		
+*/		
 		#region Normal equipment
 		private static readonly Type[] m_ClothingTypes = new[]
         {
@@ -121,8 +121,8 @@ namespace Server
             typeof(WizardsHat), typeof(BodySash), typeof(Doublet), typeof(Boots), typeof(FullApron), typeof(JesterSuit),
             typeof(Sandals), typeof(Tunic), typeof(Shoes), typeof(Shirt), typeof(Kilt), typeof(Skirt), typeof(FancyShirt),
             typeof(FancyDress), typeof(ThighBoots), typeof(LongPants), typeof(PlainDress), typeof(Robe), typeof(ShortPants),
-            typeof(HalfApron), typeof(FurSarong), typeof(FurCape), typeof(FlowerGarland), typeof(GildedDress), typeof(FurBoots), 
-			typeof(FormalShirt)
+            typeof(HalfApron), /* typeof(FurSarong), typeof(FurCape), typeof(FlowerGarland), typeof(GildedDress), typeof(FurBoots), 
+			typeof(FormalShirt) */
         };
         public static Type[] ClothingTypes => m_ClothingTypes;
 		
@@ -130,7 +130,7 @@ namespace Server
         {
             typeof(SkullCap), typeof(Bandana), typeof(FloppyHat), typeof(Cap), typeof(WideBrimHat), typeof(StrawHat),
             typeof(TallStrawHat), typeof(WizardsHat), typeof(Bonnet), typeof(FeatheredHat), typeof(TricorneHat),
-            typeof(JesterHat), typeof(OrcMask), typeof(TribalMask), typeof(FlowerGarland), typeof(BearMask), typeof(DeerMask)
+            typeof(JesterHat), typeof(OrcMask), typeof(TribalMask), /* typeof(FlowerGarland) */ , typeof(BearMask), typeof(DeerMask)
         };
         public static Type[] HatTypes => m_HatTypes;
 		
@@ -142,14 +142,14 @@ namespace Server
             typeof(BlackStaff), typeof(GnarledStaff), typeof(QuarterStaff), typeof(Broadsword), typeof(Cutlass), typeof(Katana),
             typeof(Kryss), typeof(Longsword), typeof(Scimitar), typeof(VikingSword), typeof(Pickaxe), typeof(HammerPick),
             typeof(ButcherKnife), typeof(Cleaver), typeof(Dagger), typeof(SkinningKnife), typeof(ShepherdsCrook),
-			typeof(Scythe), typeof(BoneHarvester), typeof(Scepter), typeof(BladedStaff), typeof(Pike), typeof(DoubleBladedStaff),
-            typeof(Lance), typeof(CrescentBlade), typeof(SmithyHammer), typeof(SledgeHammerWeapon)
+			/* typeof(Scythe), typeof(BoneHarvester), typeof(Scepter), typeof(BladedStaff), typeof(Pike), typeof(DoubleBladedStaff),
+            typeof(Lance), typeof(CrescentBlade), typeof(SmithyHammer), typeof(SledgeHammerWeapon) */
         };	
         public static Type[] WeaponTypes => m_WeaponTypes;
 
         private static readonly Type[] m_RangedWeaponTypes = new[] 
 		{ 
-			typeof(Bow), typeof(Crossbow), typeof(HeavyCrossbow), typeof(CompositeBow), typeof(RepeatingCrossbow)
+			typeof(Bow), typeof(Crossbow), typeof(HeavyCrossbow), /* typeof(CompositeBow), typeof(RepeatingCrossbow) */ 
 		};
         public static Type[] RangedWeaponTypes => m_RangedWeaponTypes;
 
@@ -168,7 +168,7 @@ namespace Server
 		
 		private static readonly Type[] m_JewelryTypes = new[]
         {
-            typeof(GoldRing), typeof(GoldBracelet), typeof(SilverRing), typeof(SilverBracelet)
+        /*    typeof(GoldRing), typeof(GoldBracelet), typeof(SilverRing), typeof(SilverBracelet) */
         };
         public static Type[] JewelryTypes => m_JewelryTypes;
 
@@ -190,15 +190,15 @@ namespace Server
 
         private static readonly Type[] m_RareGemTypes =
         {
-            typeof(BlueDiamond), typeof(DarkSapphire), typeof(EcruCitrine), typeof(FireRuby), typeof(PerfectEmerald), typeof(Turquoise), typeof(WhitePearl), typeof(BrilliantAmber)
+            /* typeof(BlueDiamond), typeof(DarkSapphire), typeof(EcruCitrine), typeof(FireRuby), typeof(PerfectEmerald), typeof(Turquoise), typeof(WhitePearl), typeof(BrilliantAmber) */
         };
 
         public static Type[] RareGemTypes => m_RareGemTypes;
 
         private static readonly Type[] m_MLResources =
 		{
-            typeof(BlueDiamond), typeof(DarkSapphire), typeof(EcruCitrine), typeof(FireRuby), typeof(PerfectEmerald), typeof(Turquoise), typeof(WhitePearl), typeof(BrilliantAmber),
-            typeof(LuminescentFungi), typeof(BarkFragment), typeof(SwitchItem), typeof(ParasiticPlant),
+          /*  typeof(BlueDiamond), typeof(DarkSapphire), typeof(EcruCitrine), typeof(FireRuby), typeof(PerfectEmerald), typeof(Turquoise), typeof(WhitePearl), typeof(BrilliantAmber),
+            typeof(LuminescentFungi), typeof(BarkFragment), typeof(SwitchItem), typeof(ParasiticPlant), */
         };
 
         public static Type[] MLResources => m_MLResources;
