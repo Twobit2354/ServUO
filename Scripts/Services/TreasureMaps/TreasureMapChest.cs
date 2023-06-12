@@ -11,7 +11,7 @@ namespace Server.Items
 {
     public class TreasureMapChest : LockableContainer
     {
-        public static Type[] Artifacts => m_Artifacts;
+       /* public static Type[] Artifacts => m_Artifacts;
         private static readonly Type[] m_Artifacts = new Type[]
         {
             typeof(CandelabraOfSouls), typeof(GoldBricks), typeof(PhillipsWoodenSteed),
@@ -44,14 +44,14 @@ namespace Server.Items
             typeof(KelpWovenLeggings),
             typeof(RunedDriftwoodBow),
             typeof(ValkyrieArmor)
-        };
+        }; */
         public static Type[] SOSDecor => m_SOSDecor;
         private static readonly Type[] m_SOSDecor = new Type[]
         {
             typeof(GrapeVine),
             typeof(LargeFishingNet)
         };
-
+/*
         public static Type[] ImbuingIngreds => m_ImbuingIngreds;
         private static readonly Type[] m_ImbuingIngreds =
         {
@@ -59,7 +59,7 @@ namespace Server.Items
             typeof(EssenceControl), typeof(EssenceDiligence), typeof(EssenceDirection),   typeof(EssenceFeeling),
             typeof(EssenceOrder),   typeof(EssencePassion),   typeof(EssencePersistence), typeof(EssenceSingularity)
         };
-
+*/
         private static readonly TimeSpan _DeleteTime = TimeSpan.FromHours(3);
 
         private List<Item> m_Lifted = new List<Item>();
@@ -382,12 +382,12 @@ namespace Server.Items
                 if (level >= 4)
                 {
                     switch (Utility.Random(4))
-                    {
+                   /* {
                         case 0: newSpecial = new AncientAquariumFishNet(); break;
                         case 1: newSpecial = new LiveRock(); break;
                         case 2: newSpecial = new SaltedSerpentSteaks(); break;
                         case 3: newSpecial = new OceanSapphire(); break;
-                    }
+                    } */
                 }
             }
             else
@@ -457,11 +457,11 @@ namespace Server.Items
             switch (Utility.Random(8))
             {
                 default:
-                case 0: special = new CreepingVine(); break;
+             /*   case 0: special = new CreepingVine(); break;
                 case 1: special = new MessageInABottle(); break;
                 case 2: special = new ScrollOfAlacrity(PowerScroll.Skills[Utility.Random(PowerScroll.Skills.Count)]); break;
                 case 3: special = new Skeletonkey(); break;
-                case 4: special = new TastyTreat(5); break;
+                case 4: special = new TastyTreat(5); break; */
                 case 5: special = new TreasureMap(Utility.RandomMinMax(level, Math.Min(7, level + 1)), map); break;
                 case 6: special = GetRandomRecipe(); break;
                 case 7: special = ScrollOfTranscendence.CreateRandom(1, 5); break;
