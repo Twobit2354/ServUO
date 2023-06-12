@@ -381,8 +381,8 @@ namespace Server.Items
 
                 if (level >= 4)
                 {
-                    switch (Utility.Random(4))
-                   /* {
+                  /*  switch (Utility.Random(4))
+                    {
                         case 0: newSpecial = new AncientAquariumFishNet(); break;
                         case 1: newSpecial = new LiveRock(); break;
                         case 2: newSpecial = new SaltedSerpentSteaks(); break;
