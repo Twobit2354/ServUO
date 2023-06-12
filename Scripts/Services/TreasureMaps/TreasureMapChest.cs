@@ -454,7 +454,7 @@ namespace Server.Items
         {
             Item special;
 
-            switch (Utility.Random(8))
+            switch (Utility.Random(3))
             {
                 default:
              /*   case 0: special = new CreepingVine(); break;
@@ -462,9 +462,9 @@ namespace Server.Items
                 case 2: special = new ScrollOfAlacrity(PowerScroll.Skills[Utility.Random(PowerScroll.Skills.Count)]); break;
                 case 3: special = new Skeletonkey(); break;
                 case 4: special = new TastyTreat(5); break; */
-                case 5: special = new TreasureMap(Utility.RandomMinMax(level, Math.Min(7, level + 1)), map); break;
-                case 6: special = GetRandomRecipe(); break;
-                case 7: special = ScrollOfTranscendence.CreateRandom(1, 5); break;
+                case 1: special = new TreasureMap(Utility.RandomMinMax(level, Math.Min(7, level + 1)), map); break; // Original case 5
+                case 2: special = GetRandomRecipe(); break;// Original case 6 
+                case 3: special = ScrollOfTranscendence.CreateRandom(1, 5); break;// Original case 7
             }
 
             return special;
