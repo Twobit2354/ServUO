@@ -499,12 +499,12 @@ namespace Server.Items
             max = (int)(max * scale);
         }
 
-        public static Item GetRandomRecipe()
+    /*    public static Item GetRandomRecipe()
         {
             List<Engines.Craft.Recipe> recipes = new List<Engines.Craft.Recipe>(Engines.Craft.Recipe.Recipes.Values);
 
             return new RecipeScroll(recipes[Utility.Random(recipes.Count)]);
-        }
+        } */
 
         public override bool CheckLocked(Mobile from)
         {
