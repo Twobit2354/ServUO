@@ -410,7 +410,7 @@ namespace Server.Items
             new HousePlacementEntry(typeof(Keep),               1011313,    2625,   1312,   3019,   1509,   52, 562500, 0, 11,  0,  0x007C),
             new HousePlacementEntry(typeof(Castle),             1011314,    4076,   2038,   4688,   2344,   78, 865000, 0, 16,  0,  0x007E),
 
-            new HousePlacementEntry(typeof(TrinsicKeep),        1158748,    2625,   1312,   3019,   1509,   52, 29643750, 0, 11,    0,  0x147E),
+          /*  new HousePlacementEntry(typeof(TrinsicKeep),        1158748,    2625,   1312,   3019,   1509,   52, 29643750, 0, 11,    0,  0x147E),
             new HousePlacementEntry(typeof(GothicRoseCastle),   1158749,    4076,   2038,   4688,   2344,   78, 44808750, 0, 16,    0,  0x147F),
             new HousePlacementEntry(typeof(ElsaCastle),         1158750,    4076,   2038,   4688,   2344,   78, 45450000, 0, 16,    0,  0x1480),
             new HousePlacementEntry(typeof(Spires),             1158761,    4076,   2038,   4688,   2344,   78, 47025000, 0, 16,    0,  0x1481),
@@ -445,9 +445,9 @@ namespace Server.Items
             new HousePlacementEntry(typeof(TheTerraceGardens),          1159269,    4076,   2038,   4688,   2344,   78, 46136250, 0, 16,    0,  0x149B),
             new HousePlacementEntry(typeof(TheKeepCalmAndCarryOnKeep),  1159414,    2625,   1312,   3019,   1509,   52, 23006250, 0, 11,    0,  0x149C),
             new HousePlacementEntry(typeof(TheRavenloftKeep),           1159415,    2625,   1312,   3019,   1509,   52, 24457500, 0, 11,    0,  0x149D),
-            new HousePlacementEntry(typeof(TheQueensRetreatKeep),       1159416,    2625,   1312,   3019,   1509,   52, 27641250, 0, 11,    0,  0x149E),
+            new HousePlacementEntry(typeof(TheQueensRetreatKeep),       1159416,    2625,   1312,   3019,   1509,   52, 27641250, 0, 11,    0,  0x149E),*/
         };
-
+/*
         private static readonly HousePlacementEntry[] m_CustomHouseContest = new HousePlacementEntry[]
         {
             new HousePlacementEntry(typeof(HouseFoundation), 1158538,   2625,   1312,   3019,   1509,   78, 525000, 0,  10, 0,  0x147C), // 23x23 3-Story Customizable Keep
@@ -563,7 +563,7 @@ namespace Server.Items
             new HousePlacementEntry(typeof(HouseFoundation), 1060383,   2119,   1059,   2437,   1218,   42, 177500, 0,  9,  0,  0x147A), // 18x17 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060384,   2119,   1059,   2437,   1218,   42, 187000, 0,  10, 0,  0x147B)// 18x18 3-Story Customizable House
         };
-
+*/
         private static readonly Hashtable m_Table;
         private readonly Type m_Type;
         private readonly int m_Description;
